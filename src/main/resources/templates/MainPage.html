@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <title>Seller</title>
+
+    <link rel = "stylesheet" href = "../static/MainPage.css"/>
+</head>
+
+<body>
+<nav class = "navbar">
+    <ul>
+        <li>
+            <form class = "form" action = "post">
+                <input type = "text" placeholder = "Search"/>
+                <button class = "btn" type = "submit">Search</button>
+            </form>
+        </li>
+        <div class = "links">
+            <li><a href = "">Home</a></li>
+            <li><a href = "">Items</a></li>
+            <li><a href = "">Account</a></li>
+        </div>
+    </ul>
+</nav>
+
+
+<div class = "subMenu">
+    <div class = "account-subMenu">
+        <ul>
+            <li><a href = "">Sign in</a></li>
+            <li><a href = "">Register</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--
+    <div>
+
+    </div>
+-->
+<div class = "items-container">
+    <div class = "item-filter">
+        <div class = "item-order">
+            <span id = "Order-span">Order by</span>
+            <ul>
+                <li>
+                    <div class = "dropdown-menu">
+                        <a class = "dropdown-item" href = "">Price asc</a>
+                        <a class = "dropdown-item" href = "">Price des</a>
+                        <a class = "dropdown-item" href = "">Name A-Z</a>
+                        <a class = "dropdown-item" href = "">Name Z-A</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class = "price">
+            <label for = "">Price</label>
+            <input type = "number" placeholder = "Minimum">
+            <span>-</span>
+            <input type = "number" placeholder = "Maximum">
+            <button id = "submit-btn">></button>
+        </div>
+
+        <a href = "" id = "add-product">Add product</a>
+    </div>
+
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://http2.mlstatic.com/D_NQ_NP_856979-MCO43856399065_102020-W.webp" alt = "Foto"
+                 height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "detail-item">Details</a>
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://http2.mlstatic.com/protector-voltaje-multimatic-para-electrodomesticos-tv-xbox-D_NQ_NP_729221-MCO40551939307_012020-W.webp"
+                 alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+    <div class = "item">
+        <div class = "img-item">
+            <img src = "https://www.w3schools.com/images/lamp.jpg" alt = "Foto" height = "10%" width = "10%">
+        </div>
+        <div class = "tittle-item">
+            <h3>Bombilla</h3>
+        </div>
+        <div class = "description-item">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime suscipit hic. Ab nulla
+                    tempora incidunt praesentium eaque neque aperiam quia adipisci ullam tenetur saepe, sed nam
+                    aspernatur animi sunt!</span>
+        </div>
+
+        <a href = "" class = "add-shopping">Add</a>
+    </div>
+
+</div>
+</body>
+
+</html>
