@@ -10,10 +10,22 @@ body {
 	'Lucida Sans', Arial, sans-serif;
 }
 
+a[href="#"] {
+	cursor : default;
+}
+
+a[href="#"]:hover {
+	background-color : rgba(33, 127, 227, 0);
+}
+
+a:hover {
+	background-color : rgba(33, 127, 227, 0.63);
+}
+
 .navbar {
 	padding          : 15px 120px;
 	text-align       : center;
-	background-color : rgb(33, 78, 129);
+	background-color : rgb(23, 92, 165);
 }
 
 .navbar li {
@@ -21,37 +33,29 @@ body {
 }
 
 .navbar a {
-	box-sizing : content-box;
 	color      : aliceblue;
+	box-sizing : content-box;
 	cursor     : pointer;
 	padding    : 0 10px;
 	font-size  : 18px;
-	/* float: right; */
 }
 
 .links {
 	margin-left : 780px;
 	box-sizing  : border-box;
-	/* width: 1500px; */
 }
 
-.subMenu li a {
-	color            : white;
-	font-size        : 15px;
-	display          : block;
-	padding          : 5px 20px;
-	/*text-align       : center;*/
-	background-color : rgba(20, 72, 128, 0.83);
+.links a:hover {
+	background-color : rgba(255, 255, 255, 0);
 }
 
-.account-subMenu {
-	width  : 100px;
-	margin : 0 1050px;
+.links li:hover {
+	padding          : 15px 0;
+	background-color : rgba(33, 127, 227, 0.63);
 }
 
 .form {
-	cursor : pointer;
-	float  : left;
+	float : left;
 }
 
 .form input {
@@ -62,10 +66,34 @@ body {
 }
 
 .form button {
-	width : 65px;
+	cursor : pointer;
+	width  : 65px;
 }
 
-.items-container {
+.dropdown {
+	display          : none;
+	position         : absolute;
+	background-color : grey;
+}
+
+.dropdown a {
+	color      : black;
+	display    : block;
+	text-align : left;
+	padding    : 3px 15px;
+}
+
+.account-menu {
+	width  : 90px;
+	margin : 0 1050px;
+}
+
+.account-menu a {
+	font-size : 16px;
+	padding   : 6px 10px;
+}
+
+.items-displayers {
 	padding       : 0 100px;
 	margin        : 20px 85px;
 	border-radius : 4px;
@@ -77,51 +105,81 @@ body {
 	border-bottom : 1px solid rgb(199, 189, 189);
 }
 
+.item-filter div {
+	display    : inline-block;
+	box-sizing : content-box;
+}
+
 .item-filter a {
 	color : black;
 }
 
-.dropdown-menu {
-	padding : 0;
-	margin  : 0;
-	width   : 100px;
+.arrow {
+	border       : solid aliceblue;
+	border-width : 0 3px 3px 0;
+	display      : inline-block;
+	padding      : 3px;
 }
 
-.dropdown-menu a {
-	display    : block;
-	box-sizing : content-box;
-	/* box-sizing: content-box; */
-	width      : 100px;
+.down {
+	transform : rotate(45deg);
 }
 
-.price {
-	display : contents;
+.border-arrow {
+	cursor           : pointer;
+	border           : 1px solid grey;
+	border-radius    : 6px;
+	padding          : 1px 50px;
+	background-color : rgb(23, 92, 165);
+}
+
+.border-arrow a {
+	cursor : pointer;
+}
+
+.border-arrow:hover {
+	background-color : rgba(33, 127, 227, 0.63);
 }
 
 .price input {
-	width : 70px;
+	width   : 70px;
+	padding : 3px;
 }
 
-.price input::-webkit-outer-spin-button
+.price input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance : none;
 	margin             : 0;
 }
 
-.price #submit-btn {
-	cursor           : pointer;
-	border           : none;
-	border-radius    : 50%;
-	background-color : rgba(66, 66, 66, 0.329);
-	/* gray to bottons*/
+.order-by, .category-submenu {
+	margin-top : -10px;
+}
+
+.order-by {
+	margin-left : 100px;
+}
+
+.category-submenu {
+	margin-left : 510px;
+	width       : 110px;
 }
 
 #add-product {
-	/* margin-left: 400px; */
 	border-radius    : 3px;
-	padding          : 2px;
-	background-color : rgba(66, 66, 66, 0.329);
-	/* box-sizing: inherit; */
+	padding          : 4px;
+	background-color : rgb(23, 92, 165);
+	float            : right;
+	color            : aliceblue;
+}
+
+#add-product:hover {
+	background-color : rgba(33, 127, 227, 0.63);
+}
+
+.item-container {
+	display : block;
+
 }
 
 .item {
@@ -133,23 +191,53 @@ input::-webkit-inner-spin-button {
 	border  : 1px solid rgb(187, 177, 177);
 }
 
+.item:hover {
+	box-shadow : black;
+}
+
+.item img {
+	cursor     : pointer;
+	display    : block;
+	height     : 110px;
+	width      : 110px;
+	margin     : auto auto;
+	object-fit : cover;
+	padding    : 5px;
+}
+
+.info-item {
+	border-top : 1px solid rgb(187, 177, 177);
+}
+
+.title-item, .item-price {
+	color : black;
+}
+
+.title-item {
+	font-size : 20px;
+}
+
+.item-price {
+	display   : block;
+	margin    : 6px 0;
+	font-size : 15px;
+}
+
 .description-item {
 	font-size : 12px;
+	width     : 210px;
+	height    : 55px;
+	float     : left;
 }
 
-.img-item img {
-	display      : block;
-	height       : 110px;
-	width        : 110px;
-	margin-left  : auto;
-	margin-right : auto;
-	object-fit   : cover;
-}
-
-.add-shopping {
-	padding          : 3px;
-	float            : right;
-	background-color : rgb(33, 78, 129);
-	border-radius    : 2px;
+.item .add-shopping {
+	margin           : 2px 0 0 220px;
 	color            : aliceblue;
+	padding          : 4px;
+	background-color : rgb(23, 92, 165);
+	border-radius    : 4px;
+}
+
+.add-shopping:hover {
+	background-color : rgba(33, 127, 227, 0.63);
 }
