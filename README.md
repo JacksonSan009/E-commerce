@@ -1,3 +1,4 @@
-# E-commerce
+## E-commerce
 
-Java, Spring Boot, Thymeleaf
+#Tecnologies 
+Java, Spring Boot, Thymeleaf, W3 style
