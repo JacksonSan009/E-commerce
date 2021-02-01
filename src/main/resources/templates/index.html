@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8"/>
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport"/>
+    <title>E-commerce</title>
+
+    <link href = "../static/css/MainPage.css" rel = "stylesheet"/>
+    <link href = "../static/css/color-theme.css" rel = "stylesheet"/>
+    <link href = "https://www.w3schools.com/w3css/4/w3.css" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+</head>
+
+<body>
+<div class = "nav-bar">
+    <div class = "w3-bar w3-theme-d2 w3-hide-large w3-row ">
+        <a class = " w3-bar-item w3-button w3-col s4" href = "">Home</a>
+        <a class = " w3-bar-item w3-button w3-col s4" href = "">Items</a>
+        <!--        <a class = " w3-bar-item w3-button w3-col s4" href = "">Account</a>-->
+
+        <div class = "w3-dropdown-hover">
+            <button class = "w3-button">Account</button>
+            <div class = "w3-dropdown-content w3-bar-block w3-border">
+                <a class = "w3-bar-item w3-button" href = "#">Login</a>
+                <a class = "w3-bar-item w3-button" href = "#">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "w3-bar w3-container  w3-padding-16 w3-theme-d2 ">
+        <div class = "w3-mobile">
+            <form action = "post">
+                <input class = " w3-bar-item  w3-input " placeholder = "Search" type = "text"/>
+                <button class = "w3-bar-item  w3-button w3-theme-l1 " type = "submit">Search</button>
+            </form>
+        </div>
+
+        <div class = "w3-hide-small  w3-right">
+            <a class = " w3-bar-item w3-button " href = "">Home</a>
+            <a class = " w3-bar-item w3-button " href = "">Items</a>
+
+            <div class = "w3-dropdown-hover">
+                <button class = "w3-button">Account</button>
+                <div class = "w3-dropdown-content w3-bar-block w3-border">
+                    <a class = "w3-bar-item w3-button" href = "#">Login</a>
+                    <a class = "w3-bar-item w3-button" href = "#">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "w3-card w3-container">
+    <div class = "w3-card w3-container">
+        <div class = "w3-bar  w3-padding-16">
+            <div></div>
+
+            <div class = "w3-dropdown-hover w3-bar-item">
+                <a class = " ">Order by
+                    <span class = "material-icons">expand_more</span>
+                </a>
+
+                <div class = "w3-dropdown-content w3-bar-block w3-border ">
+                    <a class = "w3-bar-item w3-button" href = "">Price Asc</a>
+                    <a class = "w3-bar-item w3-button" href = "">Price Des</a>
+                    <a class = "w3-bar-item w3-button" href = "">Name A-Z</a>
+                    <a class = "w3-bar-item w3-button" href = "">Name Z-A</a>
+                </div>
+            </div>
+
+            <div class = "w3-bar w3-bar-item">
+                <a>Price</a>
+                <input id = "minimum-input" placeholder = "Minimum" type = "number">
+                <i>-</i>
+                <input for = "submit-btn" placeholder = "Maximum" type = "number">
+            </div>
+
+            <div class = "w3-dropdown-hover w3-bar-item">
+                <a class = " ">Categorys
+                    <span class = "material-icons">expand_more</span>
+                </a>
+
+                <div class = "w3-dropdown-content w3-bar-block w3-border">
+                    <a class = "w3-bar-item w3-button" href = "">cosa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "w3-card-4  w3-row w3-padding">
+        <div class = " w3-card  w3-bar-block w3-third w3-theme-light">
+            <img alt = "Foto"
+                 class = "w3-image"
+                 src = "https://http2.mlstatic.com/D_NQ_NP_856979-MCO43856399065_102020-W.webp">
+
+            <h2 class = " w3-center ">Celular</h2>
+            <h3 class = " w3-center">$1.000.000</h3>
+
+            <p class = "w3-bar-item">
+                Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de
+                telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red,
+                cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales.
+            </p>
+
+            <a class = "w3-bar-item w3-button w3-block w3-theme-dark w3-center" href = "">ADD</a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer class = "w3-container w3-theme-light w3-center ">
+    <h6>Made by Jackson Arango Loaiza</h6>
+    <div class = "w3-bar ">
+        <a class = "w3-bar-item w3-button " href = "https://www.linkedin.com/in/jacksonsan009/" target = "_blank"><span
+                class = "material-icons">work</span></a>
+        <a class = "w3-bar-item w3-button " href = "https://github.com/JacksonSan009/E-commerce" target = "_blank"><span
+                class = "material-icons">code</span></a>
+        <a class = "w3-bar-item w3-button " href = "" target = "_blank"><span class = "material-icons">email</span></a>
+    </div>
+</footer>
+
+</html>
