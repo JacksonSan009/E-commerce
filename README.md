@@ -1,4 +1,9 @@
-## E-commerce
+<h2> E-commerce </h2>
 
-##Tecnologies 
-Java, Spring Boot, Thymeleaf, W3 style
+<h4>Tecnologies</h4>
+<ul>
+  <li>Java</li>
+  <li>Spring Boot</li>
+  <li>Thymeleaf</li>
+  <li>W3 style</li>
+</ul>
