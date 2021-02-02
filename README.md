@@ -1,4 +1,7 @@
 <h2> E-commerce </h2>
+<p>
+E-commerce web aplication type
+</p>
 
 <h4>Tecnologies</h4>
 <ul>
