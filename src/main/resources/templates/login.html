@@ -5,39 +5,58 @@
 <body>
 <div th:replace = "index :: top-nav-bar"></div>
 
+<div id = "fb-root"></div>
+<script async crossorigin = "anonymous" defer nonce = "NjRXwF4o"
+		src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=257933645931705"></script>
+
 <div class = "w3-container w3-padding-large ">
+	<!-- left empty space -->
 	<div class = "w3-third w3-container"></div>
 	<!-- Card -->
 	<div class = "w3-third w3-container w3-card-2 w3-center w3-border ">
 		<!-- Tittle -->
 		<header class = "w3-conatainer w3-theme-d2 w3-border-bottom ">
-			<h2>Account Login</h2>
+			<h2>Sign in account</h2>
 		</header>
 
-		<!-- fields -->
-		<div class = "w3-bar w3-conatent w3-border-bottom w3-border-theme w3-padding">
-			<form action = "post">
-				<label for = "emailInput">Email</label>
-				<input class = "w3-input w3-round w3-border w3-theme-light  " id = "emailInput" placeholder = "Email" type = "text"/>
+		<!-- Login Apis -->
+		<div class = "w3-bar-block w3-container w3-padding w3-center w3-border-bottom">
+			<!-- Google login -->
 
-				<label for = "passwordInput">Password</label>
-				<input class = "w3-input w3-round w3-border w3-theme-light  " id = "passwordInput" placeholder = "Password" type = "text"/>
+			<!-- Facebook login -->
+			<div class = "w3-bar-item fb-login-button" data-auto-logout-link = "false" data-button-type = "continue_with"
+				 data-layout = "default" data-size = "medium" data-use-continue-as = "false" data-width = ""></div>
+
+			<label>Or use</label>
+		</div>
+
+		<!-- fields -->
+		<div class = "w3-content  w3-border-theme w3-padding w3-border-bottom">
+			<form action = "POST">
+				<label for = "email">Email</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light" id = "email" placeholder = "Email" type = "text"/>
+
+				<div class = "w3-margin-top">
+					<label for = "password">Password</label>
+					<input class = "w3-input w3-round w3-border w3-theme-light " id = "password" placeholder = "Password" type = "text"/>
+				</div>
 
 				<div class = "w3-padding-16">
-					<button class = "w3-btn w3-theme-l1" type = "submit">Login</button>
+					<button class = "w3-btn w3-theme-l1" type = "submit">Sign in</button>
 				</div>
 			</form>
 		</div>
 
 		<!-- Links -->
-		<footer class = "w3-container w3-padding-small w3-bar-block  w3-center">
-			<a class = "w3-bar-item " href = "">Register</a>
-			<a class = "w3-bar-item " href = "">Forgot you'r password?</a>
-		</footer>
+		<div class = "w3-container w3-padding-small w3-bar-block  w3-center">
+			<a class = "w3-bar-item " href = "/register">Don't have a account? Sign up</a>
+			<a class = "w3-bar-item " href = "#">Forgot you'r password?</a>
+		</div>
 	</div>
+	<!-- right empty space -->
 	<div class = "w3-third w3-container"></div>
 </div>
+<script th:replace = "index :: jQuery"></script>
+<script async defer src = "https://apis.google.com/js/platform.js?onload=renderButton"></script>
 </body>
-
-<footer th:replace = "index :: footer"></footer>
 </html>
