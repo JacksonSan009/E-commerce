@@ -33,9 +33,9 @@ public class RegisterController {
 		String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 		user.setImagePath(fileName); User savedUser = userRepository.save(user);
 
-		String uploadDir = "resources/images/user-profile-photo/" + savedUser.getId();
+		String uploadDir = "src/main/resources/images/user-profile-photo/user-" + savedUser.getId();
 
-		FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
+		FileUploadUtil.saveImage(uploadDir, fileName, multipartFile);
 
 		return "login";
 	}

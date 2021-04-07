@@ -13,16 +13,18 @@ items, sell them o buy them.
 
 ## Features
 ### To do:
-* Be able to login with a Google or Facebook account
-* Can chose your location with Google maps api
-* Responsive design for mobiles
-* Image avatar
-* Animations
+* Be able to login with a Google or Facebook account.
+* Password recuperation with email.
+* Can chose your location with Google maps API.
+* Responsive design for mobiles.
+* Animations for the front-end.
+* Docker image for the project.
+* Reset password by token.
  
 ### Done
-*
+* Image avatar for users.
 
- Trello board: https://trello.com/b/feqtm3zG/e-commerce
+ ##### Trello board: https://trello.com/b/feqtm3zG/e-commerce
 
 ## Configuration
 ### Manually

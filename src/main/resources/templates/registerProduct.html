@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th = "http://www.thymeleaf.org">
+<head th:replace = "index :: header"></head>
+
+<body>
+<div th:replace = "index :: top-nav-bar"></div>
+
+<!-- Card -->
+<div class = "w3-margin w3-padding w3-container w3-card-2 w3-center w3-border ">
+	<!-- Tittle -->
+	<header class = "w3-container w3-theme-d2 w3-border-bottom ">
+		<h2>Register Product</h2>
+	</header>
+
+	<div class = "w3-container w3-padding">
+		<div class = "w3-twothird w3-container ">
+			<img alt = "profile-image" class = "w3-border" id = "profileImage" src = "images/Image Icon/2x/outline_image_black_36dp.png"
+				 style = "width: 750px; height: 213px; object-fit: contain">
+		</div>
+
+		<div class = "w3-third w3-container ">
+			<label>Upload media</label>
+			<input accept = "image/png, image/jpeg" class = "w3-cell-middle w3-margin-top" id = "inputImage" name = "inputImage"
+				   type = "file">
+
+			<!-- Separator line -->
+			<div class = "w3-border-top w3-margin"></div>
+
+			<div class = "w3-bar-block  w3-margin">
+				<label>Upload from</label>
+				<button class = "w3-bar-item w3-margin-top">Google Drive</button>
+				<button class = "w3-bar-item ">Facebook Photos</button>
+			</div>
+		</div>
+
+		<div class = "w3-row " style = "margin: 0 80px 0 80px">
+			<div class = "w3-rest w3-margin-bottom ">
+				<label for = "name">Product name</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light" id = "name" placeholder = "name" type = "text"/>
+			</div>
+			<div class = "w3-half w3-margin-bottom ">
+				<label for = "brand">Brand</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light w3-margin-right " id = "brand" placeholder = "brand"
+					   type = "text"/>
+			</div>
+			<div class = "w3-half w3-margin-bottom ">
+				<label for = "category">Category</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light w3-margin-left " id = "category" placeholder = "category"
+					   type = "text"/>
+			</div>
+			<div class = "w3-half w3-margin-bottom ">
+				<label for = "price">Price</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light w3-margin-right " id = "price" placeholder = "price"
+					   type = "number"/>
+			</div>
+			<div class = "w3-half w3-margin-bottom ">
+				<label for = "discount">Discount</label>
+				<input class = "w3-input w3-round w3-border w3-theme-light w3-margin-left " id = "discount" placeholder = "discount"
+					   type = "number"/>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
